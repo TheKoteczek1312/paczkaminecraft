@@ -1,0 +1,9 @@
+name: Spacksy
+uuid: ea161bd6-3462-3a71-91ce-78541973f453
+build: true
+break_block: true
+open_chest: true
+spilling_water_and_lava: true
+place_tnt: true
+teleport_players: true
+break_beacon: true

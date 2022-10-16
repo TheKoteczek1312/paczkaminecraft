@@ -1,0 +1,1265 @@
+# ~-~-~-~-~-~-~-~-~-~-~-~~-~-~-~~ #
+#                                 #
+#           FunnyGuilds           #
+#          4.10.3 Snowdrop        #
+#                                 #
+# ~-~-~-~-~-~-~-~-~-~-~-~~-~-~-~~ #
+# FunnyGuilds wspiera PlaceholderAPI, lista dodawanych placeholderów znajduje się tutaj:
+# https://github.com/FunnyGuilds/FunnyGuilds/wiki/%5BPL%5D-PlaceholderAPI
+#  
+# Jeżeli chcesz, aby dana wiadomość była pusta, zamiast wiadomości umieść: ''
+
+# Wyświetlana nazwa pluginu
+plugin-name: FunnyGuilds
+
+# Czy plugin ma działać w trybie debug - służy on do wysyłania dodatkowych wiadomości, w celu diagnozowania błędów
+debug-mode: false
+
+# Czy informacje o aktualizacji mają być widoczne podczas wejścia na serwer
+update-info: true
+
+# Czy informacje o aktualizacji wersji nightly mają być widoczne podczas wejścia na serwer
+# Ta opcja działa tylko wtedy, gdy włączona jest opcja 'update-info'
+update-nightly-info: true
+
+# Czy ma być włączona możliwość zakładania gildii (można ją zmienić także za pomocą komendy /ga enabled)
+guilds-enabled: true
+
+# Czy tworzenie regionów gildii, oraz inne związane z nimi rzeczy, mają byc włączone
+# UWAGA - dobrze przemyśl decyzję o wyłączeniu regionów!
+# Gildie nie będą miały w sobie żadnych informacji o regionach, a jeśli regiony są włączone - te informacje muszą byc obecne
+# Jeśli regiony miałyby być znowu włączone - będzie trzeba wykasować WSZYSTKIE dane pluginu
+# Wyłączenie tej opcji nie powinno spowodować żadnych błędów, jeśli już są utworzone regiony gildii
+regions-enabled: true
+
+# Bloki, które można stawiać na terenie gildii, niezależnie od tego, czy jest się jej członkiem
+# Zostaw puste, aby wyłączyć
+# Nazwy bloków muszą pasować do nazw podanych tutaj: https://spigotdocs.okaeri.cloud/select/org/bukkit/Material.html
+placing-blocks-bypass-on-region: []
+
+# Zablokuj rozlewanie się wody i lawy poza terenem gildii
+# Działa tylko jeśli regiony są włączone
+water-and-lava-flow-only-for-regions: false
+
+# Czy gracz po śmierci ma się pojawiać w bazie swojej gildii
+# Działa tylko jeśli regiony są włączone
+respawn-in-base: true
+
+# Maksymalna długość nazwy gildii
+name-length: 22
+
+# Minimalna długość nazwy gildii
+name-min-length: 4
+
+# Maksymalna długość tagu gildii
+tag-length: 4
+
+# Minimalna długość tagu gildii
+tag-min-length: 2
+
+# Zasada sprawdzania nazwy gildii przy jej tworzeniu
+# Dostepne zasady:
+# LOWERCASE - umożliwia użycie tylko małych liter
+# UPPERCASE - umożliwia użycie tylko wielkich liter
+# DIGITS - umożliwia użycie tylko cyfr
+# LOWERCASE_DIGITS - umożliwia użycie małych liter i cyfr
+# UPPERCASE_DIGITS - umożliwia użycie wielkich liter i cyfr
+# LETTERS - umożliwia użycie małych i wielkich liter
+# LETTERS_DIGITS - umożliwia użycie małych i wielkich liter oraz cyfr
+# LETTERS_DIGITS_UNDERSCORE - umożliwia użycie małych i wielkich liter, cyfr oraz podkreślnika
+#  
+# Dodatkowo można stworzyć własną zasadę regexa - pomocna może okazać sięprzy tym strona https://regex101.com/
+name-regex: LETTERS
+
+# Zasada sprawdzania tagu gildii przy jej tworzeniu
+# Możliwe zasady są takie same jak w przypadku name-regex
+tag-regex: LETTERS
+
+# Zasada sprawdzania nicków graczy
+# Możliwe zasady są takie same jak w przypadku name-regex
+player-name-regex: LETTERS_DIGITS_UNDERSCORE
+
+# Minimalna długość nicku gracza
+player-name-min-length: 3
+
+# Maksymalna długość nicku gracza
+player-name-max-length: 16
+
+# Minimalna liczba graczy w gildii, aby zaliczała się ona do rankingu
+guild-min-members: 1
+
+# Czy wiadomości o braku potrzebnych przedmiotów maja zawierać elementy, na które można najechać
+# Takie elementy pokazują informacje o przedmiocie, np. jego typ, nazwę czy opis
+# Funkcja jest obecnie trochę niedopracowana i może powodować problemy na niektórych wersjach MC, np. 1.8.8
+enable-item-component: false
+
+# Przedmioty wymagane do założenia gildii
+# Tylko wartości ujęte w <> są wymagane - reszta, ujeta w [], jest opcjonalna
+# Wzór: <ilosc> <przedmiot>:[metadata] [name:lore:enchants:eggtype:skullowner:armorcolor:flags]
+# Przykład: "5 stone name:&bFunnyGuilds lore:&eJestem_najlepszym#&6pluginem!"
+#  
+# Zamiast spacji wstawiaj podkreślnik: _
+# Aby zrobić nową linię lore wstaw hash: #
+# Aby w lore użyć znaku # wstaw {HASH}
+#  
+# eggtype to typ jajka do spawnu moba, używane tylko gdy typem przedmiotu jest MONSTER_EGG
+# skullowner to nick gracza, którego głowa jest tworzona, używane tylko gdy typem przedmiotu jest SKULL_ITEM
+# armorcolor to kolor, w którym będzie przedmiot, używane tylko gdy przedmiot jest częścią zbroi skórzanej
+# flags to flagi, które maja byc nałożone na przedmiot. Dostepne flagi: HIDE_ENCHANTS, HIDE_ATTRIBUTES, HIDE_UNBREAKABLE, HIDE_DESTROYS, HIDE_PLACED_ON, HIDE_POTION_EFFECTS
+# Kolor musi byc podany w postaci: "R_G_B"
+#  
+# UWAGA: Nazwy przedmiotów musza pasować do nazw podanych tutaj: https://spigotdocs.okaeri.cloud/select/org/bukkit/Material.html
+# UWAGA: Typ jajka musi pasować do typów entity podanych tutaj: https://spigotdocs.okaeri.cloud/select/org/bukkit/entity/EntityType.html
+items:
+- 32 diamond
+- 32 netherite_ingot
+- 32 gold_ingot
+- 32 iron_ingot
+- 32 redstone
+- 32 book
+- 32 oak_leaves name:&7Liście
+- 32 tnt
+- 32 apple
+
+# Ilość doświadczenia wymagana do założenia gildii
+required-experience: 0
+
+# Ilość pieniędzy wymagana do założenia gildii
+# UWAGA: Aby ta opcja mogła działać - na serwerze musi być plugin Vault oraz plugin dodający ekonomię
+required-money: 0.0
+
+# Przedmioty wymagane do założenia gildii, dla osoby z uprawnieniem funnyguilds.vip.items
+items-vip:
+- 1 diamond
+- 1 netherite_ingot
+- 1 gold_ingot
+- 1 iron_ingot
+- 1 redstone
+- 1 book
+- 1 oak_leaves name:&7Liście
+- 1 tnt
+- 1 apple
+
+# Ilość doświadczenia wymagana do założenia gildii, dla osoby z uprawnieniem funnyguilds.vip.items
+required-experience-vip: 0
+
+# Ilość pieniędzy wymagana do założenia gildii, dla osoby z uprawnieniem funnyguilds.vip.items
+# UWAGA: Aby ta opcja mogła działać - na serwerze musi być plugin Vault oraz plugin dodający ekonomię
+required-money-vip: 0.0
+
+# Czy opcja wymaganego rankingu do założenia gildii ma byc włączona
+rank-create-enable: true
+
+# Minimalny ranking wymagany do założenia gildii
+rank-create: 1000
+
+# Minimalny ranking wymagany do założenia gildii, dla osoby z uprawnieniem funnyguilds.vip.rank
+rank-create-vip: 800
+
+# Czy GUI z przedmiotami na gildię ma być wspólne dla wszystkich
+# Jeśli włączone - wszyscy gracze będą widzieli GUI stworzone w sekcji gui-items, a GUI z sekcji gui-items-vip będzie ignorowane
+use-common-gui: false
+
+# GUI z przedmiotami na gildię, dla osób bez uprawnienia funnyguilds.vip.items
+# Jeśli włączone jest use-common-gui - poniższe GUI jest używane także dla osób z uprawnieniem funnyguilds.vip.items
+# Każda linijka listy oznacza jeden slot, liczba slotów powinna byc wielokrotnością liczby 9 i nie powinna byc większa niz 54
+# Aby użyć przedmiotu, stworzonego w jednym slocie, w innym - można użyć {GUI-nr}, np. {GUI-1} wstawi ten sam przedmiot, który jest w pierwszym slocie
+# Aby wstawić przedmiot na gildię należy użyć {ITEM-nr}, np. {ITEM-1} wstawi pierwszy przedmiot na gildię
+# Aby wstawić przedmiot na gildię z listy vip należy użyć {VIPITEM-nr}
+gui-items:
+- '{ITEM-1}'
+- '{ITEM-2}'
+- '{ITEM-3}'
+- '{ITEM-4}'
+- '{ITEM-5}'
+- '{ITEM-6}'
+- '{ITEM-7}'
+- '{ITEM-8}'
+- '{ITEM-9}'
+
+# Nazwa GUI z przedmiotami na gildię, dla osób bez uprawnienia funnyguilds.vip.items
+# Nazwa może zawierać max. 32 znaki, wliczając w to kody kolorów
+gui-items-title: '&5&lPrzedmioty na gildie'
+
+# GUI z przedmiotami na gildię, dla osób z uprawnieniem funnyguilds.vip.items
+# Zasada tworzenia GUI jest taka sama jak w przypadku sekcji gui-items
+# Poniższe GUI będzie ignorowane, jeśli wlaczone jest use-common-gui
+gui-items-vip:
+- '{VIPITEM-1}'
+- '{VIPITEM-2}'
+- '{VIPITEM-3}'
+- '{VIPITEM-4}'
+- '{VIPITEM-5}'
+- '{VIPITEM-6}'
+- '{VIPITEM-7}'
+- '{VIPITEM-8}'
+- '{VIPITEM-9}'
+
+# Nazwa GUI z przedmiotami na gildię, dla osób z uprawnieniem funnyguilds.vip.items
+# Nazwa może zawierać max. 32 znaki, wliczając w to kody kolorów
+gui-items-vip-title: '&8&lPrzedmioty na gildie &6&l(VIP)'
+
+# Zmiana nazwy i koloru przedmiotów na gildię (nie ma znaczenia uprawnienie funnyguilds.vip.items)
+# Jeśli nie chcesz używac tej funkcji - to pozostaw gui-items-name: ""
+# {ITEM} - nazwa przedmiotu (np. 1 golden_apple)
+# {ITEM-NO-AMOUNT} - nazwa przedmiotu bez liczby (np. golden_apple)
+gui-items-name: '&a{ITEM-NO-AMOUNT}'
+
+# Czy do przedmiotów na gildię, które są w GUI, mają być dodawane dodatkowe linie opisu
+# Linie te można ustawić poniżej
+add-lore-lines: true
+
+# Dodatkowe linie opisu, dodawane do każdego przedmiotu, który jest jednocześnie przedmiotem na gildię
+# Dodawane linie nie zależą od otwieranego GUI - są wspólne dla zwykłego i VIP
+# Możliwe do użycia zmienne:
+# {REQ-AMOUNT} - całkowita wymagana liczba przedmiotów
+# {PINV-AMOUNT} - liczba danego przedmiotu, jaką gracz ma przy sobie
+# {PINV-PERCENT} - procent wymaganej liczby danego przedmiotu, jaki gracz ma przy sobie
+# {EC-AMOUNT} - liczba danego przedmiotu, jaką gracz ma w enderchescie
+# {EC-PERCENT} - procent wymaganej liczby danego przedmiotu, jaki gracz ma w enderchescie
+# {ALL-AMOUNT} - liczba danego przedmiotu, jaką gracz ma przy sobie i w enderchescie
+# {ALL-PERCENT} - procent wymaganej liczby danego przedmiotu, jaki gracz ma przy sobie i w enderchescie
+gui-items-lore:
+- ''
+- '&7Posiadzasz juz:'
+- '&f{PINV-AMOUNT} &7przy sobie &f({PINV-PERCENT}%)'
+- '&f{EC-AMOUNT} &7w enderchescie &f({EC-PERCENT}%)'
+- '&f{ALL-AMOUNT} &7calkowicie &f({ALL-PERCENT}%)'
+
+# Minimalna odległość od spawnu
+create-distance: 100
+
+# Minimalna odległość regionu gildii od granicy mapy
+create-guild-min-distance: 50.0
+
+# Konfiguracja serca gildii
+heart-configuration:
+  # Blok lub entity, które jest sercem gildii
+  # Zmiana entity wymaga pełnego restartu serwera
+  # Bloki muszą być podawane w formacie - material:metadata
+  # Nazwy bloków muszą pasować do nazw podanych tutaj: https://spigotdocs.okaeri.cloud/select/org/bukkit/Material.html
+  # Typ entity musi byc zgodny z tą lista (i zdrowym rozsądkiem) - https://spigotdocs.okaeri.cloud/select/org/bukkit/entity/EntityType.html
+  # UWAGA: Zmiana bloku, gdy są juz zrobione jakieś gildie, spowoduje nieprawidłowe działanie ich regionów
+  #  
+  # UWAGA: Jeśli jako serca gildii chcesz użyć bloku, który spada pod wpływem grawitacji - upewnij się, ze będzie on stał na jakimś innym bloku!
+  # Jeśli pojawi sie w powietrzu - spadnie i plugin nie będzie odczytywał go poprawnie!
+  create-type: dragon_egg
+  
+  # Czy poziom na jakim ma być wyznaczone centrum gildii ma być ustalany przez pozycję gracza
+  use-player-position-for-center-y: false
+  
+  # Na jakim poziomie ma być wyznaczone centrum gildii
+  create-center-y: 30
+  
+  # Konfiguracja hologramu nad sercem gildii
+  hologram:
+    # Czy hologram nad sercem gildii ma być włączony
+    enabled: true
+    
+    # Co ile ticków ma być aktualizowany hologram (20 ticków = 1 sekunda)
+    update-interval: 400
+    
+    # Przedmiot ozdobny nad hologramem
+    # Jeśli ustawiony na AIR - opcja jest wyłączona
+    item: AIR
+    
+    # Tekst wyświetlany przez hologram
+    # Dostępne zmienne: {GUILD}, {TAG}, {OWNER}, {DEPUTIES}, {MEMBERS}, {MEMBERS-ONLINE}, {MEMBERS-ALL}, {REGION-SIZE}, {POINTS}, {POINTS-FORMAT}, {KILLS}, {DEATHS}, {ASSISTS}, {LOGOUTS}, {KDR}, {ALLIES}, {ALLIES-TAGS}, {ENEMIES}, {ENEMIES-TAGS}, {RANK}, {VALIDITY}, {LIVES}, {LIVES-SYMBOL}, {LIVES-SYMBOL-ALL}, {GUILD-PROTECTION}
+    displayed-lines:
+    - ''
+    - '&7- &bGildia {TAG} &7-'
+    - '&7- &bZycia {LIVES} &7-'
+    - ''
+    
+    # Korekcja lokalizacji hologramu względem startowej lokalizacji
+    location-correction:
+      x: 0.5
+      y: 2.5
+      z: 0.5
+  
+  # Czy ma się tworzyć kula z obsydianu dookoła centrum gildii
+  create-center-sphere: true
+  
+  # Czy przy tworzeniu gildii powinien być wklejany schemat
+  # Wklejenie schematu wymaga pluginu WorldEdit
+  paste-schematic-on-creation: false
+  
+  # Nazwa pliku ze schematem początkowym gildii
+  # Wklejenie schematu wymaga pluginu WorldEdit
+  # Schemat musi znajdować się w folderze FunnyGuilds
+  guild-schematic-file-name: funnyguilds.schematic
+  
+  # Czy schemat przy tworzeniu gildii powinien być wklejany razem z powietrzem
+  # Przy dużych schematach ma to wpływ na wydajność
+  # Wklejenie schematu wymaga pluginu WorldEdit
+  paste-schematic-with-air: true
+  
+  # Przesunięcie domyślnego home gildii względem serca gildii
+  # Opcja przydatna w przypadku ustawienie własnego schematu serca, aby gracze nie pojawiali sie w bloku
+  home-offset:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  
+  # Pozycja głowy gracza dla domyślnego home gildii
+  home-head-position:
+    yaw: 0.0
+    pitch: 0.0
+  interaction-protection:
+    # Czy blokada interakcji w okolicach serca gildii powinna być włączona
+    enabled: false
+    
+    # Przesunięcie pierwszego wierzchołka względem serca gildii
+    first-corner:
+      x: 2.0
+      y: -1.0
+      z: -2.0
+    
+    # Przesunięcie drugiego wierzchołka względem serca gildii
+    second-corner:
+      x: -2.0
+      y: 3.0
+      z: 2.0
+
+# Typy bloków, z którymi osoba spoza gildii NIE może prowadzić interakcji na terenie innej gildii
+blocked-interact:
+- CHEST
+- TRAPPED_CHEST
+
+# Czy funkcja efektu 'zbugowanych' klocków ma byc włączona (działa tylko na terenie wrogiej gildii)
+bugged-blocks: false
+
+# Czas po którym 'zbugowane' klocki maja zostać usunięte
+# Czas podawany w tickach (20 ticków = 1 sekunda)
+bugged-blocks-timer: 20
+
+# Bloki, których nie można 'bugować'
+# Nazwy bloków muszą pasować do nazw podanych tutaj: https://spigotdocs.okaeri.cloud/select/org/bukkit/Material.html
+bugged-blocks-exclude:
+- TNT
+- LAVA
+- WATER
+- RAIL
+- DETECTOR_RAIL
+- ACTIVATOR_RAIL
+- POWERED_RAIL
+- ANVIL
+- GRAVEL
+- SAND
+- DRAGON_EGG
+- PISTON
+- STICKY_PISTON
+- REDSTONE_BLOCK
+- REDSTONE_WALL_TORCH
+- REPEATER
+- COMPARATOR
+- DAYLIGHT_DETECTOR
+- DISPENSER
+- HOPPER
+- DROPPER
+- OBSERVER
+- STONE_PRESSURE_PLATE
+- OAK_PRESSURE_PLATE
+- LIGHT_WEIGHTED_PRESSURE_PLATE
+- HEAVY_WEIGHTED_PRESSURE_PLATE
+- LEVER
+- TRIPWIRE_HOOK
+- OAK_TRAPDOOR
+- IRON_TRAPDOOR
+- OAK_BUTTON
+- STONE_BUTTON
+- OAK_DOOR
+- IRON_DOOR
+- SPRUCE_DOOR
+- BIRCH_DOOR
+- JUNGLE_DOOR
+- ACACIA_DOOR
+- DARK_OAK_DOOR
+- OAK_FENCE_GATE
+- SPRUCE_FENCE_GATE
+- JUNGLE_FENCE_GATE
+- DARK_OAK_FENCE_GATE
+- BIRCH_FENCE_GATE
+- REDSTONE_LAMP
+- TRAPPED_CHEST
+- CHEST
+
+# Czy klocki po 'zbugowaniu' mają zostać oddane
+bugged-blocks-return: false
+
+# Maksymalna liczba członków w gildii
+max-members: 15
+
+# Maksymalna liczba sojuszy między gildiami
+max-allies: 15
+
+# Maksymalna liczba wojen między gildiami
+max-enemies: 15
+
+# Lista nazw światów, na których możliwość utworzenia gildii ma być zablokowana
+blocked-worlds:
+- some_world
+
+# Możliwość ucieczki z terenu innej gildii
+# Funkcja niedostępna, jeśli możliwość teleportacji do gildii jest wyłączona
+escape-enable: true
+
+# Czas w sekundach, jaki musi upłynąć od włączenia ucieczki do teleportacji
+escape-delay: 120
+
+# Możliwość ucieczki na spawn dla graczy bez gildii
+escape-spawn: true
+
+# Możliwość teleportacji do gildii
+base-enable: true
+
+# Czas oczekiwania na teleportację, w sekundach
+base-delay: 5s
+
+# Czas oczekiwania na teleportację, w sekundach, dla graczy posiadających uprawnienie funnyguilds.vip.baseTeleportTime
+base-delay-vip: 3s
+
+# Koszt teleportacji do gildii, jeżeli teleportacja ma byc darmowa - wystarczy wpisac: base-items: []
+base-items:
+- 1 diamond
+- 1 emerald
+
+# Koszt dołączenia do gildii, jeżeli dołączenie ma byc darmowe - wystarczy wpisac: join-items: []
+join-items:
+- 1 diamond
+
+# Możliwość powiększania gildii
+enlarge-enable: true
+
+# O ile powiększany jest teren gildii przy zwiększeniu poziomu
+enlarge-size: 5
+
+# Koszt powiększania gildii
+# Każdy myślnik to 1 poziom powiększenia
+enlarge-items:
+- 8 diamond
+- 16 diamond
+- 24 diamond
+- 32 diamond
+- 40 diamond
+- 48 diamond
+- 56 diamond
+- 64 diamond
+- 72 diamond
+- 80 diamond
+
+# Wielkość regionu gildii
+region-size: 50
+
+# Minimalna odległość między terenami gildii
+region-min-distance: 10
+
+# Czas wyświetlania powiadomienia na pasku powiadomień, w sekundach
+region-notification-time: 15s
+
+# Co ile może byc wywoływany pasek powiadomień przez jednego gracza, w sekundach
+region-notification-cooldown: 60
+
+# Komendy zablokowane na terenie gildii, dla graczy niebędących członkami
+region-commands:
+- sethome
+
+block-teleport-on-region:
+  # Czy ma być blokowana teleportacja na teren neutralnej gildii
+  neutral: true
+  
+  # Czy ma być blokowana teleportacja na teren wrogiej gildii
+  enemy: true
+  
+  # Czy ma być blokowana teleportacja na teren sojuszniczej gildii
+  ally: false
+
+# Czy proces usunięcia gildii powinien zostać przerwany, jezeli ktoś spoza gildii jest na jej terenie
+guild-delete-cancel-if-someone-is-on-region: false
+
+tnt-protection:
+  time:
+    # Czy włączyć ochronę przed TNT na terenach gildii w podanych godzinach
+    enabled: false
+    
+    # Czy włączyć ochronę przed TNT na całym serwerze w podanych godzinach
+    enabled-global: false
+    
+    # O której godzinie ma sie zacząć ochrona przed TNT
+    # Godzina w formacie HH:mm
+    start-time: '22:00'
+    
+    # Do której godziny ma działać ochrona przed TNT
+    # Godzina w formacie HH:mm
+    end-time: '6:00'
+  build:
+    # Minimalna wysokość, od której można stawiać TNT
+    min-height: 0
+    
+    # Maksymalna wysokość, do której można stawiać TNT
+    max-height: 255
+  explode:
+    # Minimalna wysokość, od której TNT wybucha
+    min-height: 0
+    
+    # Maksymalna wysokość, do której TNT wybucha
+    max-height: 255
+
+# Przez ile sekund po wybuchu nie można budować na terenie gildii
+region-explode: 120
+
+# Czy blokada budowania przy wybuchu powinna działać jeśli gildia jest chroniona
+region-explode-block-protected: false
+# Czy blokada budowania przy wybuchu powinna działać jeśli TNT jest wyłączone
+region-explode-block-tnt-disabled: false
+
+# Lista entity, których wybuch nie powoduje blokady budowania na terenie gildii
+# Nazwy entity muszą pasować do nazw podanych tutaj: https://spigotdocs.okaeri.cloud/select/org/bukkit/entity/EntityType.html (nie wszystkie entity wybuchają)
+region-explode-exclude-entities:
+- CREEPER
+- WITHER_SKULL
+- FIREBALL
+- WITHER
+
+# Czy blokada po wybuchu ma obejmować rownież niszczenie bloków
+region-explode-block-breaking: false
+
+# Czy blokada po wybuchu ma obejmować rownież interakcje z blocked-interact
+region-explode-block-interactions: false
+
+# Zasięg pobieranych przedmiotów po wybuchu, jeżeli chcesz wyłączyć - wpisz 0
+explode-radius: 3
+
+# Jakie materiały, i z jaka szansą, maja byc niszczone po wybuchu
+# <material>: <szansa (w %)>
+# Jeżeli wszystkie materiały mają mieć określony % na wybuch - uzyj specjalnego znaku '*'
+explode-materials:
+  ender_chest: 20.0
+  enchantment_table: 20.0
+  obsidian: 20.0
+  water: 33.0
+  lava: 33.0
+
+# Czy powstałe wybuchy powinny niszczyć bloki wyłącznie na terenach gildii
+explode-should-affect-only-guild: false
+
+# Możliwość podbijania gildii
+war-enabled: true
+
+# Ile żyć ma gildia
+war-lives: 3
+
+# Po jakim czasie od założenia można zaatakować gildię
+war-protection: 24h
+
+# Ile czasu trzeba czekać do następnego ataku na gildię
+war-wait: 24h
+
+# Czy gildia podczas okresu ochronnego ma posiadać ochronę przeciw TNT
+war-tnt-protection: true
+
+# Czy zwierzęta na terenie gildii mają być chronione przed osobami spoza gildii
+animals-protection: false
+
+# Jaką ważność ma gildia po jej założeniu
+validity-start: 14d
+
+# Ile czasu dodaje przedłużenie ważności gildii
+validity-time: 14d
+
+# Ile dni przed końcem wygasania można przedłużyć gildię, wpisz 0 jeżeli funkcja ma byc wylaczona
+validity-when: 14d
+
+# Koszt przedłużenia gildii
+validity-items:
+- 10 diamond
+
+# Czy wiadomość o zabiciu gracza powinna być pokazywana wszystkim
+# Jeśli wyłączone - będzie pokazywana tylko graczom, którzy brali udział w walce
+broadcast-death-message: true
+
+# Czy wiadomość o zabiciu gracza powinna być wyświetlana bez względu na wyłączone wiadomości o śmierci
+ignore-death-messages-disabled: false
+
+# Ranking, od którego rozpoczyna gracz
+rank-start: 1000
+
+# Czy blokada nabijania rankingu na tych samych osobach powinna byc włączona
+rank-farming-protect: true
+
+# Czy opcja blokady nabijania rankingu powinna działać w obie strony tzn. jeśli gracz nas zabije, a potem zabijemy go my to nie dostaniemy punktów
+bidirectional-rank-farming-protect: false
+
+# Czy ostatnia osoba, która zaatakowała gracza, który zginął, ma być uznawana za jego zabójcę
+rank-farming-last-attacker-as-killer: false
+damage-tracking:
+  # Czas po którym zadane obrażenia, stają się "przestarzałe"
+  expire-time: 1m
+  # Jak długa ma być historia zadanych obrażeń.
+  # Wstaw -1 jeśli ma być nieskończona.
+  max-tracks: 30
+
+# Czas przez jaki osoba, która zaatakowała gracza, który zginął, ma być uznawany za jego zabójcę
+# Format: <wartość><jednostka><wartość><jednostka><...>
+# Jednostki: ns - nanosekundy, ms - milisekundy, s - sekundy, m - minuty, h - godziny, d - dni
+# Przykład: 1m30s
+rank-farming-consideration-timeout: 30s
+
+# Czas trwania blokady nabijania rankingu po walce dwóch osób
+rank-farming-cooldown: 2h
+
+# Czy ma być zablokowana zmiana rankingu, jeśli obie osoby z walki mają taki sam adres IP
+rank-ip-protect: false
+
+# Czy ma być zablokowana zmiana rankingu, jeśli obie osoby z walki są członkami tej samej gildii
+rank-member-protect: false
+
+# Czy ma być zablokowana zmiana rankingu, jeśli obie osoby z walki są z sojuszniczych gildii
+rank-ally-protect: false
+
+# Czy gracze z uprawnieniem 'funnyguilds.ranking.exempt' powinni byc uwzględnieni przy wyznaczaniu pozycji gracza w rankingu
+skip-privileged-players-in-rank-positions: false
+
+# Co ile ticków ranking graczy oraz gildii powinien być odświeżany (20 ticków = 1 sekunda)
+ranking-update-interval: 40
+
+# Czy system asyst ma byc włączony
+rank-assist-enable: true
+
+# Limit asyst, wpisz liczbę ujemną aby wyłączyć
+assists-limit: -1
+
+# Jaka część rankingu za zabicie idzie na konto zabójcy
+# 1 to cały ranking, 0 to nic
+# Reszta rankingu rozdzielana jest między osoby asystujące, w zaleznosci od zadanych obrażeń
+rank-assist-killer-share: 0.5
+
+# Czy zabójcy zawsze mają dzielić sie ilością punktów według rank-assist-killer-share, nawet gdy nie ma osób asystujących
+rank-assist-victim-always-share: false
+
+# Na jakich regionach ma być ignorowane nadawanie asyst
+# UWAGA: wymagany plugin WorldGuard
+assists-regions-ignored:
+- spawnGuildHeart
+
+# System rankingowy używany przez plugin, do wyboru:
+#  ELO - system bazujacy na rankingu szachowym ELO, najlepiej zbalansowany ze wszystkich trzech
+#  PERCENT - system, który obu graczom zabiera procent rankingu osoby zabitej
+#  STATIC - system, który zawsze zabiera x rankingu zabijającemu i x zabitemu
+rank-system: ELO
+
+# Sekcja używana TYLKO jeśli wybranym rank-system jest ELO!
+# Lista stałych do obliczeń rankingowych ELO - im mniejsza stała, tym mniejsze zmiany rankingu
+# Stałe określają też o ile maksymalnie może zmienić się ranking pochodzący z danego przedziału
+# Lista powinna być podana od najmniejszych do największych rankingów i zawierać tylko liczby naturalne, z zerem włącznie
+# Elementy listy powinny być postaci: "minRank-maxRank stała", np.: "0-1999 32"
+# * użyta w zapisie elementu listy oznacza wszystkie wartości od danego minRank w gore, np.: "2401-* 16"
+elo-constants:
+- 0-1999 32
+- 2000-2400 24
+- 2401-* 16
+
+# Sekcja używana TYLKO jeśli wybranym rank-system jest ELO!
+# Dzielnik obliczeń rankingowych ELO - im mniejszy dzielnik, tym większe zmiany rankingu
+# Dzielnik powinien być liczbą dodatnią, niezerową
+elo-divider: 400.0
+
+# Sekcja używana TYLKO jeśli wybranym rank-system jest ELO!
+# Wykładnik potęgi obliczeń rankingowych ELO - im mniejszy wykładnik, tym wieksze zmiany rankingu
+# Wykładnik powinien być liczbą dodatnią, niezerową
+elo-exponent: 10.0
+
+# Sekcja używana TYLKO jeśli wybranym rank-system jest PERCENT!
+# Procent rankingu osoby zabitej, o jaki zmienią się rankingi po walce
+percent-rank-change: 1.0
+
+# Sekcja używana TYLKO jeśli wybranym rank-system jest STATIC!
+# Punkty dawane osobie, która wygrała walkę
+static-attacker-change: 15
+
+# Sekcja używana TYLKO jeśli wybranym rank-system jest STATIC!
+# Punkty zabierane osobie, która przegrała walkę
+static-victim-change: 10
+
+# Czy pokazywać informacje przy kliknięciu PPM na gracza
+info-player-enabled: true
+
+# Czy pokazać informacje z komendy /gracz przy kliknięciu PPM
+# Jeśli wyłączone - pokazywane będą informacje z sekcji "playerRightClickInfo" z messages.yml
+info-player-command: true
+
+# Cooldown pomiędzy pokazywaniem informacji przez PPM
+info-player-cooldown: 5s
+
+# Czy trzeba kucać, aby przy kliknięciu PPM na gracza wyświetliło informacje o nim
+info-player-sneaking: true
+
+# Czy członkowie gildii mogą sobie zadawać obrażenia (domyślnie)
+damage-guild: false
+
+# Czy sojuszniczy mogą sobie zadawać obrażenia
+damage-ally: false
+
+lives-repeating-symbol:
+  # Symbol (lub słowo), który ma być powtarzany przy użyciu placeholdera LIVES-SYMBOL lub LIVES-SYMBOL-ALL
+  full: '&c❤'
+  
+  # Symbol (lub słowo), który ma być powtarzany przy użyciu placeholdera LIVES-SYMBOL
+  empty: '&8❤'
+  
+  # Symbol (lub słowo), który ma być pokazywany na końcu placeholdera LIVES-SYMBOL, kiedy gildia posiada więcej żyć niz podstawowe (war-lives)
+  more: '&a+'
+
+# Wygląd znacznika {POS} wstawionego w format chatu
+# Znacznik ten pokazuje czy ktoś jest liderem, zastępcą lub zwykłym członkiem gildii
+chat-position: '&b{POS} '
+
+# Znacznik dla lidera gildii
+chat-position-leader: '**'
+
+# Znacznik dla zastępcy gildii
+chat-position-deputy: '*'
+
+# Znacznik dla członka gildii
+chat-position-member: ''
+
+# Wygląd znacznika {TAG} wstawionego w format chatu
+chat-guild: '&8[&f{TAG}&8] '
+
+# Wygląd znacznika {RANK} wstawionego w format chatu
+chat-rank: '&b{RANK} '
+
+# Wygląd znacznika {POINTS} wstawionego w format chatu
+# Możesz tu także użyć znacznika {POINTS-FORMAT}
+chat-points: '&8[&f{POINTS}&8] '
+
+top:
+  # Lista topek graczy, które mają być obliczane i parsowane
+  # Najlepiej włączyć tylko te, które będą używane, żeby niepotrzebnie nie obciążać serwera
+  # Topek tych można używać w formie placeholderów {PTOP-typ-x}, np. na tabie czy w PlaceholderAPI
+  # Dostępne typy topek: points, kills, deaths, assists, logouts
+  enabled-user-tops:
+  - deaths
+  - kills
+  - points
+  
+  # Lista topek gildii, które mają być obliczane i parsowane
+  # Najlepiej włączyć tylko te, które będą używane, żeby niepotrzebnie nie obciążać serwera
+  # Topek tych można używać w formie placeholderów {GTOP-typ-x}, np. na tabie czy w PlaceholderAPI
+  # Dostępne typy topek: points, kills, deaths, assists, logouts, avg_points, avg_kills, avg_deaths, avg_assists, avg_logouts
+  enabled-guild-tops:
+  - avg_points
+  - deaths
+  - kills
+  
+  # Czy placeholdery {PTOP-x} oraz {GTOP-x} mają byc właczone na tabie oraz w PlaceholderAPI
+  # Wyłączenie tej funkcji może minimalnie odciążyć serwer
+  enable-legacy-placeholders: true
+
+  format:
+    # Znacznik z wartością dodawany do zmiennej {PTOP-typ-x}
+    # Używaj zmiennych {VALUE} i {VALUE-FORMAT}
+    # Jeśli nie chcesz wyświetlać wartości, tylko sam nick - nie podawaj tu nic
+    ptop: ' &7[{VALUE}&7]'
+    
+    # Znacznik z wartością dodawany do zmiennej {GTOP-typ-x}
+    # Używaj zmiennych {VALUE} i {VALUE-FORMAT}
+    # Jeśli nie chcesz wyświetlać wartości, tylko sam tag - nie podawaj tu nic
+    gtop: ' &7[&b{VALUE}&7]'
+    
+    # Wygląd znacznika {VALUE-FORMAT} w zależności od wartości topki graczy
+    # Lista powinna być podana od najmniejszych do największych rankingów
+    # Elementy listy powinny być postaci: "minValue-maxValue wygląd", np.: "0-750 &4{VALUE}"
+    # Pamiętaj, aby każdy możliwy ranking miał ustalony format!
+    # * użyta w zapisie elementu listy oznacza wszystkie wartości od danego minRank w górę, np.: "1500-* &6&l{POINTS}"
+    # Nazwa sekcji oznacza dla jakiego typu topki ma być używane dane formatowanie
+    ptop-value-formatting:
+      points:
+      - 0-749 &4{VALUE}
+      - 750-999 &c{VALUE}
+      - 1000-1499 &a{VALUE}
+      - 1500-* &6&l{VALUE}
+      kills:
+      - 0-10 &c{VALUE}
+      - 11-25 &a{VALUE}
+      - 26-50 &e{VALUE}
+      - 51-* &6&l{VALUE}
+      deaths:
+      - 0-10 &c{VALUE}
+      - 11-25 &a{VALUE}
+      - 26-50 &e{VALUE}
+      - 51-* &6&l{VALUE}
+    
+    # Wygląd znacznika {VALUE-FORMAT} w zależności od wartości topki gildii
+    # Lista powinna być podana od najmniejszych do największych rankingów
+    # Elementy listy powinny być postaci: "minValue-maxValue wygląd", np.: "0-750 &4{VALUE}"
+    # Pamiętaj, aby każdy możliwy ranking miał ustalony format!
+    # * użyta w zapisie elementu listy oznacza wszystkie wartości od danego minRank w górę, np.: "1500-* &6&l{POINTS}"
+    # Nazwa sekcji oznacza dla jakiego typu topki ma być używane dane formatowanie
+    gtop-value-formatting:
+      kills:
+      - 0-30 &c{VALUE}
+      - 31-75 &a{VALUE}
+      - 76-150 &e{VALUE}
+      - 151-* &6&l{VALUE}
+      deaths:
+      - 0-30 &c{VALUE}
+      - 31-75 &a{VALUE}
+      - 76-150 &e{VALUE}
+      - 151-* &6&l{VALUE}
+      avg_points:
+      - 0-749 &4{VALUE}
+      - 750-999 &c{VALUE}
+      - 1000-1499 &a{VALUE}
+      - 1500-* &6&l{VALUE}
+
+# Wygląd znacznika {POINTS-FORMAT} i {G-POINTS-FORMAT} w zależności od wartości punktów
+# {G-POINTS-FORMAT}, tak samo jak {G-POINTS}, jest używane jedynie na liście graczy
+# Lista powinna być podana od najmniejszych do największych rankingów i zawierać tylko liczby naturalne, z zerem włącznie
+# Elementy listy powinny być postaci: "minRank-maxRank wygląd", np.: "0-750 &4{POINTS}"
+# Pamiętaj, aby każdy możliwy ranking miał ustalony format!
+# * użyta w zapisie elementu listy oznacza wszystkie wartości od danego minRank w gore, np.: "1500-* &6&l{POINTS}"
+points-format:
+- 0-749 &4{POINTS}
+- 750-999 &c{POINTS}
+- 1000-1499 &a{POINTS}
+- 1500-* &6&l{POINTS}
+
+# Znacznik z punktami dodawany do zmiennej {PTOP-x}
+# Używaj zmiennych {POINTS} i {POINTS-FORMAT}
+# Jeśli nie chcesz wyświetlać punktów, tylko sam nick - nie podawaj tu nic
+ptop-points: ' &7[{POINTS}&7]'
+
+# Znacznik z punktami dodawany do zmiennej {GTOP-x}
+# Używaj zmiennych {POINTS} i {POINTS-FORMAT}
+# Jeśli nie chcesz wyświetlać punktów, tylko sam tag - nie podawaj tu nic
+gtop-points: ' &7[&b{POINTS-FORMAT}&7]'
+
+# Wygląd znacznika {MINUS-FORMATTED} i {PLUS-FORMATTED}, w zależności od wartości zmiany w rankingu
+# Lista powinna być podana od najmniejszych do największych wartości i zawierać tylko liczby naturalne, z zerem włącznie
+# Elementy listy powinny być postaci: "minChange-maxChange wygląd", np.: "0-50 &a+{CHANGE}"
+# * użyta w zapisie elementu listy oznacza wszystkie wartości od danego minChange w górę, np.: "50-* &2+{CHANGE}"
+#   lub wszystkie wartości do danego maxChange w dół, np.: "*-50 &4-{CHANGE}"
+kill-points-change-format:
+- '*--1 &c-{CHANGE}'
+- 0-0 &7{CHANGE}
+- 1-* &a+{CHANGE}
+
+# Wygląd znacznika {PING-FORMAT} w zależności od wartości pingu
+# Lista powinna być podana od najmniejszych do największych wartości i zawierać tylko liczby naturalne, z zerem włącznie
+# Elementy listy powinny być postaci: "minPing-maxPing wygląd", np.: "0-75 &a{PING}"
+# * użyta w zapisie elementu listy oznacza wszystkie wartości od danego minPing w górę, np.: "301-* &c{PING}"
+ping-format:
+- 0-75 &a{PING}
+- 76-150 &e{PING}
+- 151-300 &c{PING}
+- 301-* &c{PING}
+
+# Symbol, od którego zaczyna się wiadomość do gildii
+chat-priv: '!'
+
+# Symbol od którego zaczyna się wiadomość do sojuszników gildii
+chat-ally: '!!'
+
+# Symbol od którego zaczyna się wiadomość do wszystkich gildii
+chat-global: '!!!'
+
+# Wygląd wiadomości wysyłanej na czacie gildii
+# Zmienne: {PLAYER}, {TAG}, {MESSAGE}, {POS}
+chat-priv-design: '&8[&aChat gildii&8] &7{POS}{PLAYER}&8:&f {MESSAGE}'
+
+# Wygląd wiadomości wysyłanej na czacie dla sojuszników
+# Zmienne: {PLAYER}, {TAG}, {MESSAGE}, {POS}
+chat-ally-design: '&8[&6Chat sojuszniczy&8] &8{TAG} &7{POS}{PLAYER}&8:&f {MESSAGE}'
+
+# Wygląd wiadomości wysyłanej na czacie globalnym gildii
+# Zmienne: {PLAYER}, {TAG}, {MESSAGE}, {POS}
+chat-global-design: '&8[&cChat globalny gildii&8] &8{TAG} &7{POS}{PLAYER}&8:&f {MESSAGE}'
+
+# Wygląd wiadomoci wysyłanej na czacie gildyjnym/sojuszniczym/globalnym gildii, dla osób z włączonym /ga spy
+# Zmienne: {PLAYER}, {TAG}, {MESSAGE}, {POS}
+chat-spy-design: '&8[&6Spy&8] &7{PLAYER}&8:&f {MESSAGE}'
+
+# Czy wiadomości z chatów gildyjnych powinny być wyświetlane w logach serwera
+log-guild-chat: false
+
+# Wygląd tagu osób w tej samej gildii
+prefix-our: '&a{TAG}&f '
+
+# Wygląd tagu gildii sojuszniczej
+prefix-allies: '&6{TAG}&f '
+
+# Wygląd tagu wrogiej gildii
+prefix-enemies: '&c{TAG}&f '
+
+# Wygląd tagu gildii neutralnej, widziany również przez graczy bez gildii
+prefix-other: '&7{TAG}&f '
+
+# Czy ptop-online/ptop-offline mają uznawać graczy na vanishu za graczy offline
+# UWAGA: opcja powinna wspierać pluginy jak VanishNoPacket, SuperVanish czy PremiumVanish
+# Jeśli opcja by nie działała z tymi (lub innymi) pluginami - proszę stworzyć issue na GitHubie
+ptop-respect-vanish: true
+
+# Kolory dodawane przed nickiem gracza online przy zamianie zmiennej {PTOP-x}
+# Jeśli nie chcesz kolorowania zależnego od statusu online - pozostaw tę sekcję (i ptop-offline) pustą
+ptop-online: '&a'
+
+# Kolory dodawane przed nickiem gracza offline przy zamianie zmiennej {PTOP-x}
+# Jeśli nie chcesz kolorowania zależnego od statusu online - pozostaw tę sekcję (i ptop-online) pustą
+ptop-offline: '&c'
+
+# Czy FunnyGuilds powinno korzystać ze wspoldzielonego scoreboarda
+# Ta opcja pozwala na wspólne działanie pluginu FunnyGuilds oraz innych pluginów modyfikujących scoreboard
+# UWAGA: opcja eksperymentalna i może powodować błędy przy wyświetlaniu rzeczy zależnych od scoreboardów!
+use-shared-scoreboard: false
+
+# Czy włączyć dummy z punktami
+# UWAGA: zalecane jest wyłączenie tej opcji w przypadku konfliktów z BungeeCordem, więcej szczegółów tutaj: https://github.com/FunnyGuilds/FunnyGuilds/issues/769
+dummy-enable: true
+
+# Wygląd nazwy wyświetlanej za punktami
+dummy-suffix: pkt
+
+# Czy tagi gildyjne obok nicku gracza mają byc włączone
+guild-tag-enabled: true
+
+# Czy tag gildii podany przy tworzeniu gildii powinien zachować formę taką, w jakiej został wpisany
+# UWAGA: gdy ta opcja jest włączona, opcja "guild-tag-uppercase" nie będzie miała wpływu na tag gildii
+guild-tag-keep-case: true
+
+# Czy tagi gildii powinny byc pokazywane wielkimi literami
+# Działa dopiero po zrestartowaniu serwera
+guild-tag-uppercase: false
+
+# Czy włączyć tłumaczenie nazw przedmiotów?
+translated-materials-enable: true
+
+# Tłumaczenia nazw przedmiotów dla znaczników {ITEM}, {ITEMS}, {ITEM-NO-AMOUNT}, {WEAPON}
+# Wpisywać w formacie - nazwa_przedmiotu: "tłumaczona nazwa przedmiotu"
+translated-materials-name:
+  DIAMOND_SWORD: '&3diamentowy miecz'
+  IRON_SWORD: '&7zelazny miecz'
+  GOLD_INGOT: '&eZloto'
+
+# Wygląd znaczników {ITEM} i {ITEMS} za liczbą przedmiotu
+# Dla np. item-amount-suffix: "szt." otrzymamy 1szt. golden_apple
+item-amount-suffix: x
+
+# Czy sprawdzanie zakazanych nazw i tagów gildii powinno być włączone
+check-for-restricted-guild-names: false
+
+# Jeśli ustawione na false - nazwy i tagi z list 'restricted-guild-names', 'restricted-guild-tags' będą niedozwolone
+# Jeśli ustawione na true - jedynie nazwy i tagi z list 'restricted-guild-names', 'restricted-guild-tags' będą dozwolone
+# Przydatne, gdy chcesz ograniczyć tworzenie np. do 2 gildii "RED", "BLUE"
+whitelist: false
+
+# Wyrażenia zakazane/dozwolone do użycia jako nazwa gildii
+restricted-guild-names:
+- Administracja
+
+# Wyrażenia zakazane/dozwolone do użycia jako tag gildii
+restricted-guild-tags:
+- TEST
+
+# Czy powiadomienie o zabójstwie gracza powinno się wyświetlać dla zabójcy jako title
+display-title-notification-for-killer: false
+
+# Czy powiadomienia o wejściu na teren gildii członka gildii powinny byc wyświetlane
+notification-guild-member-display: false
+
+# Gdzie mają pojawiać się wiadomości związane z poruszaniem się po terenach gildii
+# Możliwe miejsca wyświetlania: ACTIONBAR, BOSSBAR, CHAT, TITLE
+region-move-notification-style:
+- ACTIONBAR
+- BOSSBAR
+
+# Jak długo title/subtitle powinien się pojawiać
+# Czas podawany w tickach (20 tickow = 1 sekunda)
+notification-title-fade-in: 10
+
+# Jak długo title/subtitle powinien pozostać na ekranie gracza
+# Czas podawany w tickach (20 tickow = 1 sekunda)
+notification-title-stay: 10
+
+# Jak długo title/subtitle powinien znikać
+# Czas podawany w tickach (20 tickow = 1 sekunda)
+notification-title-fade-out: 10
+
+# Jakiego koloru powinien byc boss bar podczas wyświetlania powiadomienia
+# Dostępne kolory: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+notification-boss-bar-color: RED
+
+# Jakiego stylu powinien byc boss bar podczas wyświetlania powiadomienia
+# Dostępne style: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+notification-boss-bar-style: SOLID
+
+# Jakie flagi powinny być nałożone na byc boss bar podczas wyświetlania powiadomienia
+# Dostępne flagi: DARKEN_SKY, PLAY_BOSS_MUSIC, CREATE_FOG
+notification-boss-bar-flags:
+- CREATE_FOG
+
+# Czy osoba, która założyła pierwszą gildię na serwerze powinna dostać nagrodę
+should-give-rewards-for-first-guild: false
+
+# Przedmioty, które zostaną przyznane graczowi, który pierwszy założył gildię na serwerze
+rewards-for-first-guild:
+- 1 diamond name:&bNagroda_za_pierwsza_gildie_na_serwerze
+
+# Lista przedmiotów wymaganych do resetu rankingu
+rank-reset-needed-items:
+- 1 diamond
+
+# Lista przedmiotów wymaganych do resetu statystyk
+stats-reset-needed-items:
+- 1 diamond
+
+# Czy przy szukaniu danych o graczu ma byc pomijana wielkość znaków jego nicku
+player-lookup-ignorecase: false
+
+# Nazwy komend
+commands:
+  funnyguilds:
+    name: funnyguilds
+    aliases:
+    - fg
+    enabled: true
+
+  guild:
+    name: gildia
+    aliases:
+    - gildie
+    - g
+    enabled: true
+
+  create:
+    name: zaloz
+    aliases: []
+    enabled: true
+
+  delete:
+    name: usun
+    aliases: []
+    enabled: true
+
+  confirm:
+    name: potwierdz
+    aliases: []
+    enabled: true
+
+  invite:
+    name: zapros
+    aliases: []
+    enabled: true
+
+  join:
+    name: dolacz
+    aliases: []
+    enabled: true
+
+  leave:
+    name: opusc
+    aliases: []
+    enabled: true
+
+  kick:
+    name: wyrzuc
+    aliases: []
+    enabled: true
+
+  base:
+    name: baza
+    aliases: []
+    enabled: true
+
+  enlarge:
+    name: powieksz
+    aliases: []
+    enabled: true
+
+  ally:
+    name: sojusz
+    aliases: []
+    enabled: true
+
+  war:
+    name: wojna
+    aliases: []
+    enabled: true
+
+  items:
+    name: przedmioty
+    aliases: []
+    enabled: true
+
+  escape:
+    name: ucieczka
+    aliases:
+    - escape
+    enabled: true
+
+  rankReset:
+    name: rankreset
+    aliases:
+    - resetrank
+    enabled: true
+
+  statsReset:
+    name: statsreset
+    aliases:
+    - resetstats
+    enabled: true
+
+  tnt:
+    name: tnt
+    aliases: []
+    enabled: true
+
+  break:
+    name: rozwiaz
+    aliases: []
+    enabled: true
+
+  info:
+    name: info
+    aliases: []
+    enabled: true
+
+  player:
+    name: gracz
+    aliases: []
+    enabled: true
+
+  top:
+    name: top
+    aliases:
+    - top10
+    enabled: true
+
+  validity:
+    name: przedluz
+    aliases: []
+    enabled: true
+
+  leader:
+    name: lider
+    aliases:
+    - zalozyciel
+    enabled: true
+
+  deputy:
+    name: zastepca
+    aliases: []
+    enabled: true
+
+  ranking:
+    name: ranking
+    aliases: []
+    enabled: true
+
+  setbase:
+    name: ustawbaze
+    aliases:
+    - ustawdom
+    enabled: true
+
+  pvp:
+    name: pvp
+    aliases:
+    - ustawpvp
+    enabled: true
+  
+  # Komendy administratora
+  admin:
+    main: ga
+    add: ga dodaj
+    delete: ga usun
+    kick: ga wyrzuc
+    teleport: ga tp
+    points: ga points
+    kills: ga kills
+    deaths: ga deaths
+    ban: ga ban
+    lives: ga zycia
+    move: ga przenies
+    unban: ga unban
+    validity: ga przedluz
+    name: ga nazwa
+    tag: ga tag
+    spy: ga spy
+    enabled: ga enabled
+    leader: ga lider
+    deputy: ga zastepca
+    protection: ga ochrona
+    base: ga baza
+    logouts: ga logouts
+    assists: ga assists
+
+# Czy event PlayMoveEvent ma byc aktywny (odpowiada za wyświetlanie powiadomień o wejściu na teren gildii)
+event-move: true
+
+# Czy System Security ma byc włączony?
+system-security-enable: true
+
+# Margines sprawdzania z jak daleka gracz uderzył serce gildii
+# Jeśli dostajesz fałszywe alarmy od Security - zwiększ tę wartość do około 0.50 lub więcej
+reach-compensation: 0.26
+
+# Margines sprawdzania przez ile bloków gracz uderzył serce gildii
+freecam-compensation: 0
+
+# Liczba wątków używanych przez ConcurrencyManager
+concurrency-threads: 1
+
+# Co ile minut dane są automatycznie zapisywane
+data-interval: 1
+
+# Jak długo plugin powinien czekać na zatrzymanie wszystkich bieżących zadań przy wyłączaniu serwera
+plugin-task-termination-timeout: 30s
+
+# Jaki argument powinien zostać podany przez gracza, gdy chce zaprosić wszystkich graczy w danym promieniu
+invite-command-all-argument: '*'
+
+# Czy wielkość liter powinna być ignorowana dla argumentu od zapraszania wszystkich graczy w danym promieniu
+invite-command-all-argument-ignore-case: true
+
+# Maksymalna odległość, w jakiej zapraszani są gracze w momencie użycia komendy "/invite *"
+invite-command-all-max-range: 50.0
+
+# Domyślna odległość, w jakiej zapraszani są gracze w momencie użycia komendy "/invite *"
+invite-command-all-default-range: 10.0
+
+# Hooki do pluginów, które powinny zostać wyłączone, opcja ta powinna być stosowania jedynie w awaryjnych sytuacjach!
+# Lista hooków, które można wyłączyć: WorldEdit, WorldGuard, Vault, PlaceholderAPI, HolographicDisplays
+# Aby zostawić wszystkie hooki włączone wystarczy wpisać: disabled-hooks: []
+disabled-hooks: []
+
+# Typ zapisu danych:
+#  FLAT - lokalne pliki
+#  MYSQL - baza danych, kompatybilna z MySQL
+data-model: FLAT
+
+# Dane wymagane do połączenia z bazą
+# UWAGA: connectionTimeout jest w milisekundach!
+#  
+# Sekcja poolSize odpowiada za liczbę zarezerwowanych połączeń, domyślna wartość 5 powinna wystarczyć
+# Aby umożliwić FG automatyczne zarządzanie liczbą połączeń - ustaw poolSize na -1
+#  
+# Sekcje usersTableName, guildsTableName i regionsTableName to nazwy tabel z danymi FG w bazie danych
+# Najlepiej zmieniać te nazwy tylko wtedy, gdy np. występuje konflikt z innym pluginem
+# Aby zmienić nazwy tabel, gdy masz juz w bazie jakieś dane z FG:
+# 1. Wyłącz serwer
+# 2. Zmień dane w configu FG
+# 3. Zmień nazwy tabel w bazie używając np. phpMyAdmin
+mysql:
+  hostname: localhost
+  port: 3306
+  database: db
+  user: root
+  password: passwd
+  poolSize: 5
+  connectionTimeout: 30000
+  useSSL: true
+  characterEncoding: ''
+  usersTableName: users
+  guildsTableName: guilds
+  regionsTableName: regions

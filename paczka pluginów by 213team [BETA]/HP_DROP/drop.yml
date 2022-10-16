@@ -1,0 +1,445 @@
+## Drop (Drops.yml) ##
+ultra-block-name: '&cUltraBlock'
+ultra-block-messaage: '&aGratulacje wydropiles ultraBlock'
+ultra-block-description:
+- ''
+- test
+- ''
+ultra-chance-drop: 2.0
+ultra-block-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 10.0
+  enchant: []
+  name: '&cBeacon'
+  message_name: beacon
+  description: []
+- item: NETHERITE_HELMET
+  item_amount: 1
+  item_percent: 10.0
+  enchant: []
+  name: '&6Netherytowy hełm'
+  message_name: netherytowy hełm
+  description: []
+- item: NETHERITE_CHESTPLATE
+  item_amount: 1
+  item_percent: 10.0
+  enchant: []
+  name: '&6Netherytowa klata'
+  message_name: netherytowa klata
+  description: []
+- item: NETHERITE_LEGGINGS
+  item_amount: 1
+  item_percent: 10.0
+  enchant: []
+  name: '&6Netherytowe spodnie'
+  message_name: netherytowe spodnie
+  description: []
+- item: NETHERITE_BOOTS
+  item_amount: 1
+  item_percent: 10.0
+  enchant: []
+  name: '&6Netherytowe butki'
+  message_name: netherytowe butki
+  description: []
+- item: NETHERITE_SWORD
+  item_amount: 1
+  item_percent: 10.0
+  enchant: []
+  name: '&6Netherytowy mieczyk'
+  message_name: netherytowy miecz
+  description: []
+
+stone-case-name: '&cStoneCase'
+stone-case-messaage: '&aGratulacje wydropiles stonecase'
+stone-case-description:
+- ''
+- '&7Jest to skrzynka wydropiona ze stone'
+- '&7lub scraftowana &f/craftingi'
+- ''
+stone-case-chance-drop: 2.0
+stone-case-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+iron-case-name: '&cIronCase'
+iron-case-messaage: '&aGratulacje wydropiles ironcase'
+iron-case-description:
+- ''
+- '&7Jest to skrzynka wydropiona ze stone'
+- '&7lub scraftowana &f/craftingi'
+- ''
+iron-case-chance-drop: 2.0
+iron-case-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+gold-case-name: '&cGoldCase'
+gold-case-messaage: '&aGratulacje wydropiles goldcase'
+gold-case-description:
+- ''
+- '&7Jest to skrzynka wydropiona ze stone'
+- '&7lub scraftowana &f/craftingi'
+- ''
+gold-case-chance-drop: 2.0
+gold-case-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+diamond-case-name: '&cDiamondCase'
+diamond-case-messaage: '&aGratulacje wydropiles diamondcase'
+diamond-case-description:
+- ''
+- '&7Jest to skrzynka wydropiona ze stone'
+- '&7lub scraftowana &f/craftingi'
+- ''
+diamond-case-chance-drop: 2.0
+diamond-case-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+emerald-case-name: '&cEmeraldCase'
+emerald-case-messaage: '&aGratulacje wydropiles emeraldcase'
+emerald-case-description:
+- ''
+- '&7Jest to skrzynka wydropiona ze stone'
+- '&7lub scraftowana &f/craftingi'
+- ''
+emerald-case-chance-drop: 2.0
+emerald-case-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - '&8&n-[--------------------------------------]-'
+  - '      &f&lInformacja o dropie&8: &a&lJabłek'
+  - '           &6Szansa na drop: &e&l5.5%'
+  - '        &6Ilość jaka może wypaść: 4 sztuk'
+  - '&8&n-[--------------------------------------]-'
+
+premium-case-name: '&f&o&k;&6&l&k&o;&f&o&k;&4&l &4&LPREMIUMCASE &f&o&k;&6&l&k&o;&f&o&k;'
+premium-case-contains-name: '&4&LPREMIUMCASE'
+premium-case-messaage: '&aGratulacje wydropiles premiumcase'
+premium-case-description:
+- ''
+- '&7Jest to skrzynka z itemkami premium'
+- '&7które da i nie da sie zdobyć'
+- '&7możesz zakupić pod &f/sklep &7lub &fw itemshop'
+- ''
+premium-case-chance-drop: 2.0
+premium-case-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+cobblex-name: '&cCobblex'
+cobblex-messaage: '&aGratulacje wydropiles cobblex'
+cobblex-description:
+- ''
+- '&7Jest to &cCobbleX &7wydropiony ze stone'
+- '&7lub scraftowany &f/craftingi'
+- ''
+cobblex-chance-drop: 2.0
+cobblex-items:
+- item: APPLE
+  item_amount: 1
+  item_percent: 5.5
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - '&8&n-[--------------------------------------]-'
+  - '      &f&lInformacja o dropie&8: &a&lJabłek'
+  - '           &6Szansa na drop: &e&l5.5%'
+  - '        &6Ilość jaka może wypaść: 4 sztuk'
+  - '&8&n-[--------------------------------------]-'
+
+pandora-name: '&cPandora'
+pandora-messaage: '&aGratulacje wydropiles cobblex'
+pandora-description:
+- ''
+- test
+- ''
+pandora-chance-drop: 2.0
+pandora-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+widmo-name: '&cGlowa widmo'
+widmo-messaage: '&aGratulacje wydropiles glowe widmo'
+widmo-description:
+- ''
+- test
+- ''
+widmo-chance-drop: 2.0
+
+zombie-name: '&cDynia'
+zombie-messaage: '&aGratulacje wydropiles dynie'
+zombie-description:
+- ''
+- test
+- ''
+zombie-chance-drop: 2.0
+
+giant-name: '&cGlowa BOSSA'
+giant-messaage: '&aGratulacje wydropiles glowe bossa'
+giant-description:
+- ''
+- test
+- ''
+giant-chance-drop: 2.0
+
+snowman-name: '&cGlowa Balwana'
+snowman-messaage: '&aGratulacje wydropiles glowe balwana'
+snowman-description:
+- ''
+- '&7Jest to itemek wydropiony z bałwana'
+- ''
+snowman-chance-drop: 2.0
+
+widmo-drop-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+giant-drop-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+zombie-drop-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+snowman-drop-items:
+- item: BEACON
+  item_amount: 1
+  item_percent: 1.0
+  enchant:
+  - 'null'
+  name: '&cKamien'
+  message_name: kamien
+  description:
+  - test
+  - test
+
+vouchers:
+- name: '&cVoucher na vipa'
+  description:
+  - '&cTEST'
+  - ''
+  commands:
+  - say Gracz {PLAYER} uzyl vouchera
+  chance: 1.0
+  message: '&cGratulacje wydropiles voucher na vipa'
+  cmd_name: vip
+  item: PAPER
+
+gui-name: '&4&lDROP'
+item-name: '&c{NAME}'
+status-on: '&awlaczony'
+status-off: '&cwylaczony'
+item-description:
+- ''
+- '&8>> &7Szansa: &f{CHANGE}'
+- '&8>> &7Ilosc: &f{A-NORMAL}'
+- '&8>> &7Wysokosc: &f{MIN}-{MAX}'
+- '&8>> &7Exp: &f{EXP}'
+- ''
+- '&8>> &7Status: &f{STATUS}'
+- ''
+drops:
+- name: diament
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: DIAMOND
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 21
+- name: netherit
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: NETHERITE_INGOT
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 22
+- name: Emerald
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: EMERALD
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 23
+- name: Zelazo
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: IRON_INGOT
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 24
+- name: Zloto
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: GOLD_INGOT
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 25
+- name: Obsydian
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: OBSIDIAN
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 30
+- name: Jabłko
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: APPLE
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 31
+- name: Nić
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: STRING
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 32
+- name: Książka
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: BOOK
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 33
+- name: Drewno
+  change: 1.0
+  exp: 9
+  message: '&aGratulacje wydropiles &f{ITEM} &aw ilosci &7{AMOUNT}'
+  drop_item: OAK_WOOD
+  drop_from: STONE
+  amount_normal: 1;2
+  amount_fortune_1: 1;3
+  amount_fortune_2: 1;4
+  amount_fortune_3: 1;6
+  height: 0;256
+  gui_slot: 34

@@ -1,0 +1,31 @@
+# LPC Configuration
+# Please read the https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta before you set up.
+#
+# Placeholders:
+# {message} - the chat message
+# {name} - the player's name
+# {displayname} - the player's display name / nickname
+# {world} - the world name of the player's current world
+# {prefix} - the player's highest priority prefix
+# {suffix} - the player's highest priority suffix
+# {prefixes} - the player's prefixes sorted by the highest priority
+# {suffixes} - the player's suffixes sorted by the highest priority
+# {username-color} - the player's or the group's username color
+# {message-color} - the player's or the group's message color
+#
+# To reload the configuration, run '/lpc reload' command. Make sure you have the 'lpc.reload' permission assigned.
+# More information can be found at https://www.spigotmc.org/resources/68965.
+chat-format: "{TAG}{POINTS}{prefix} {name}&r: {message}"
+
+# Set the format per group.
+# Note: Option for more advanced users. Remove comments to run.
+group-formats:
+  default: "{TAG}{POINTS}&7{name}&r: {message}"
+  vip: "{TAG}{POINTS}&6VIP &7{name}&r: {message}"
+  svip: "{TAG}{POINTS}&eSVIP &7{name}&r: {message}"
+  mvp: "{TAG}{POINTS}&2MVP &7{name}&r: {message}"
+  helper: "{TAG}{POINTS}&3Helper &7{name}&r: {message}"
+  moderator: "{TAG}{POINTS}&aModerator &7{name}&r: {message}"
+  admin: "{TAG}{POINTS}&cAdmin &7{name}&r: {message}"
+  headadmin: "{TAG}{POINTS}&4HeadAdmin &7{name}&r: {message}"
+  wlasciciel: "{TAG}{POINTS}&4Wlasciciel &7{name}&r: {message}"

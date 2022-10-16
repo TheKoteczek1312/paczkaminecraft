@@ -1,0 +1,2 @@
+# LuckPerms UUID lookup cache
+ea161bd6-3462-3a71-91ce-78541973f453:Spacksy

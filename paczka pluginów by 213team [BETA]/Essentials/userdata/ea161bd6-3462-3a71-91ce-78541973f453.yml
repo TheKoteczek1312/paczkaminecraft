@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: true
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1665487258746
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1665493901899
+  login: 1665487007561
+money: '8000000'
+last-account-name: Spacksy
+logoutlocation:
+  world: 7f69e1fa-33d3-4fcc-abf9-1035fd3eb7d8
+  world-name: world
+  x: 32.21160726225801
+  y: 63.0
+  z: -15.0847055901261
+  yaw: 211.51588439941406
+  pitch: 3.0000014305114746
+lastlocation:
+  world: 7f69e1fa-33d3-4fcc-abf9-1035fd3eb7d8
+  world-name: world
+  x: -18.69999998807907
+  y: 60.0
+  z: -9.30000001192093
+  yaw: -115.7752685546875
+  pitch: 29.99997901916504

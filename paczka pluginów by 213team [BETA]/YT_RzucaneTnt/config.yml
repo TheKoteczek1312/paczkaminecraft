@@ -1,0 +1,16 @@
+config:
+  not:
+    perm: '&cBlad: &cNie posiadasz do tego permissji (ptnt.admin)'
+  succes:
+    give: '&7Dostales rzucane tnt do swojego eq'
+  item:
+    lore:
+    - lore 1
+    - lore2
+    name: '&7Rzucane tnt'
+    time:
+      usage: 10
+    usage:
+      place: '&cRzucanego tnt sie nie stawia'
+      time: '&cNastepne tnt mozesz rzucic za {TIME}s'
+      succes: '&7Pomyslnie uzyles rzucane tnt'

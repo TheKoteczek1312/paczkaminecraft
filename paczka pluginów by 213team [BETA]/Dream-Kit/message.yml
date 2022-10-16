@@ -1,0 +1,35 @@
+## Dream-Kit (Message-Config) ##
+# Dostepne type: (CHAT, ACTION_BAR, SUBTITLE, TITLE, SIDEBAR)
+no-permission:
+  type: CHAT
+  text: '&4Nie posiadasz uprawnien.'
+kits-is-disabled:
+  type: CHAT
+  text: '&cZestawy sa wylaczone!'
+kit-is-disabled:
+  type: CHAT
+  text: '&cTen zestaw jest wylaczony!'
+no-kit-permission:
+  type: CHAT
+  text: '&cNie posiadasz uprawnien do tego zestawu.'
+kit-cool-down:
+  type: CHAT
+  text: '&cZestaw mozesz odebrac za: &7%TIME%'
+kit-picked-up:
+  type: CHAT
+  text: '&aZestaw odebrany!'
+kit-enabled:
+  type: CHAT
+  text: '&aKit %NAME% zostal aktywowany!'
+kit-disabled:
+  type: CHAT
+  text: '&cKit %NAME% zostal dezaktywowany!'
+kits-enabled:
+  type: CHAT
+  text: '&aKity zostaly aktywowane!'
+kits-disabled:
+  type: CHAT
+  text: '&cKity zostaly dezaktywowane!'
+kit-not-found:
+  type: CHAT
+  text: '&cPodanego kita nie znaleziono.'

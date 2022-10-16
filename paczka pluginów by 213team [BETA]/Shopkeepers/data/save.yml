@@ -1,0 +1,47 @@
+# This file is not intended to be manually modified! If you want to manually edit this file anyways, ensure that the server is not running currently and that you have prepared a backup of this file.
+data-version: 3|2|2586
+'1':
+  uniqueId: 2805ed7c-3f4e-4396-bf4f-04f47ae1083f
+  world: world
+  x: 9
+  y: 63
+  z: -14
+  yaw: 79.01169
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: NONE
+    villagerType: PLAINS
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: TRIPWIRE_HOOK
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Klucz
+            do skrzynki legendarnej"}],"text":""}'
+          lore:
+          - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"»
+            "},{"bold":false,"italic":false,"color":"gray","text":"Klucz do skrzynki
+            na spawnie"}],"text":""}'
+          - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"»
+            "},{"bold":false,"italic":false,"color":"gray","text":"zakupisz na "},{"italic":false,"color":"white","text":"/sklep
+            "},{"italic":false,"color":"gray","text":"lub "},{"italic":false,"color":"white","text":"itemshop."}],"text":""}'
+          enchants:
+            LUCK: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+          internal: H4sIAAAAAAAAAONiYOBgEHQuSqyqBBIlqcW6YIqBKyc1PTUvJbEoL5EBAIwc1g4kAAAA
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: EMERALD_BLOCK
+        amount: 4
+  snapshots: []
