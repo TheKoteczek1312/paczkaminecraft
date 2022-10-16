@@ -1,0 +1,315 @@
+## Gui (config.yml) ##
+gui-ultra-name: '&c&lULTRABLOCK'
+gui-ultra:
+- slot: 1
+  item: BEACON
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: false
+- slot: 2
+  item: NETHERITE_HELMET
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 3
+  item: NETHERITE_CHESTPLATE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 4
+  item: NETHERITE_LEGGINGS
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 5
+  item: NETHERITE_BOOTS
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 6
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 7
+  item: NETHERITE_PICKAXE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 8
+  item: CHEST
+  item_amount: 1
+  item_name: '&4&LPREMIUMCASE'
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: false
+- slot: 9
+  item: SLIME_BLOCK
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: false
+- slot: 10
+  item: TOTEM_OF_UNDYING
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: false
+- slot: 11
+  item: EMERALD_BLOCK
+  item_amount: 12
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: false
+
+gui-cobblex-name: '&c&lCOBBLEX'
+gui-cobblex:
+- slot: 1
+  item: STONE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - test
+  - ''
+  item_enchant: false
+
+gui-premiumcase-name: '&c&lPremiumCase'
+gui-premiumcase:
+- slot: 11
+  item: BEACON
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: false
+- slot: 12
+  item: NETHERITE_HELMET
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 13
+  item: NETHERITE_CHESTPLATE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 14
+  item: NETHERITE_LEGGINGS
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 15
+  item: NETHERITE_BOOTS
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 16
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 17
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 20
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 21
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 22
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 23
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 24
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+- slot: 25
+  item: NETHERITE_SWORD
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&8>> &7Szansa na drop: &f30%'
+  - ''
+  item_enchant: true
+
+gui-pandora-name: '&c&lPandora'
+gui-pandora:
+- slot: 1
+  item: STONE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - test
+  - ''
+  item_enchant: false
+
+gui-stone-case-name: '&c&lStoneCase'
+gui-stone-case:
+- slot: 1
+  item: STONE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - test
+  - ''
+  item_enchant: false
+
+gui-case-name: '&c&lCASE'
+gui-case:
+- slot: 1
+  item: STONE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - test
+  - ''
+  item_action: 'ON'
+  item_enchant: false
+- slot: 2
+  item: STONE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - test
+  - ''
+  item_action: 'OFF'
+  item_enchant: false
+- slot: 3
+  item: STONE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - test
+  - ''
+  item_action: PREMIUM
+  item_enchant: false
+- slot: 4
+  item: STONE
+  item_amount: 2
+  item_name: ''
+  item_description:
+  - ''
+  - test
+  - ''
+  item_action: STONE
+  item_enchant: false
+
+gui-drop-stats-name: '&c&lStats'
+gui-drop-stats:
+- slot: 1
+  item: STONE
+  item_amount: 1
+  item_name: ''
+  item_description:
+  - ''
+  - '&7lvl: &f{LVL}'
+  - '&7stone: &f{STONE}'
+  - '&7cx: &f{CX}'
+  - '&7pandora: &f{PANDORA}'
+  item_enchant: false

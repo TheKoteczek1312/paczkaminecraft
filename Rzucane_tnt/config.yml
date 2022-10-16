@@ -1,0 +1,45 @@
+czas_do_wybuchu: 80
+crafting:
+  lewy_gorny:
+    material: TNT
+    ilosc: 32
+  srodkowy_gorny:
+    material: TNT
+    ilosc: 32
+  prawy_gorny:
+    material: TNT
+    ilosc: 32
+  lewy_srodkowy:
+    material: TNT
+    ilosc: 32
+  srodkowy:
+    material: NETHER_STAR
+    ilosc: 1
+  prawy_srodkowy:
+    material: TNT
+    ilosc: 32
+  lewy_dolny:
+    material: TNT
+    ilosc: 32
+  srodkowy_dolny:
+    material: TNT
+    ilosc: 32
+  prawy_dolny:
+    material: TNT
+    ilosc: 32
+nazwa_tnt: '&C&LRzucane TnT'
+opis_tnt:
+- '&cPrzytrzymaj PPM aby rzucic'
+- '&club postaw na ziemii'
+daj_tnt: '&cRzucak &8>> &7Dostales &f<ilosc> &cRzucanego TNT &7od &f<gracz>'
+daj_tnt_dano: '&cRzucak &8>> &7Dales &f<ilosc> &cRzucanego TNT &7dla &f<gracz>'
+daj_tnt_zla_liczba: '&cRzucak &8>> &cPodano niepoprawna ilosc!'
+daj_tnt_brak_gracza: '&cRzucak &8>> &cNieznaleziono gracza!'
+help:
+- '&cRzucane TNT - pomoc'
+- '&7/rzucanetnt = /rt'
+- ' '
+- '&6/rzucanetnt daj [<ilosc>] - daj dla siebie rzucane tnt'
+- '&6/rzucanetnt daj <nick> [<ilosc>] - daj komus rzucane tnt'
+- '&6/rzucanetnt help - dostepne komendy'
+- '&6/rzucanetnt reload - przeladuj plugin'

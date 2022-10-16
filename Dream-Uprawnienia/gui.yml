@@ -1,0 +1,137 @@
+## Dream-Uprawnienia (gui.yml) ##
+guis:
+- slot: 1
+  action: ALL
+  item:
+    material: GRAY_STAINED_GLASS_PANE
+    durability: 7
+    item-meta:
+      display-name: '&8'
+      lore:
+      - '&cTutaj nic nie ma :('
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 11
+  action: BUILD
+  item:
+    material: GRASS_BLOCK
+    item-meta:
+      display-name: '&4&lBUILD'
+      lore:
+      - ''
+      - '&7Status: {BUILD}'
+      - '&fKliknij, aby zmienic status'
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 12
+  action: BREAK
+  item:
+    material: DIAMOND_PICKAXE
+    item-meta:
+      display-name: '&4&lBREAK'
+      lore:
+      - ''
+      - '&7Status: {BREAK}'
+      - '&fKliknij, aby zmienic status'
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 13
+  action: OPEN_CHEST
+  item:
+    material: CHEST
+    item-meta:
+      display-name: '&4&lOPEN CHEST'
+      lore:
+      - ''
+      - '&7Status: {CHEST}'
+      - '&fKliknij, aby zmienic status'
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 14
+  action: SPILLING
+  item:
+    material: BUCKET
+    item-meta:
+      display-name: '&4&lSPILLING'
+      lore:
+      - ''
+      - '&7Status: {SPILLING}'
+      - '&fKliknij, aby zmienic status'
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 15
+  action: TNT
+  item:
+    material: TNT
+    item-meta:
+      display-name: '&4&lTNT'
+      lore:
+      - ''
+      - '&7Status: {TNT}'
+      - '&fKliknij, aby zmienic status'
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 16
+  action: TELEPORT
+  item:
+    material: ENDER_PEARL
+    item-meta:
+      display-name: '&4&lTELEPORT'
+      lore:
+      - ''
+      - '&7Status: {TELEPORT}'
+      - '&fKliknij, aby zmienic status'
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 17
+  action: BEACON
+  item:
+    material: BEACON
+    item-meta:
+      display-name: '&4&lBEACON'
+      lore:
+      - ''
+      - '&7Status: {BEACON}'
+      - '&fKliknij, aby zmienic status'
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 53
+  action: ALL-ADD
+  item:
+    material: GREEN_WOOL
+    durability: 13
+    item-meta:
+      display-name: '&aKliknij aby nadac wszystkie uprawnienia'
+      lore:
+      - ''
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
+- slot: 54
+  action: ALL-REMOVE
+  item:
+    material: RED_WOOL
+    durability: 14
+    item-meta:
+      display-name: '&cKliknij aby zabrac wszystkie uprawnienia'
+      lore:
+      - ''
+      enchantments:
+        DURABILITY: 10
+      item-flags:
+      - HIDE_ENCHANTS
