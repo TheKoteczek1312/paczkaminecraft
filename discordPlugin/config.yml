@@ -1,9 +1,0 @@
-bot:
-  token: "MTAyODI3OTEyNzU2NTkyNjQ3MQ.GQJctn.q3Cb-q8D94sVZWFQgK5bvRtQJpVQfTcwG0OEVc" # Token ktory loguje sie na konto bota.
-  prefix: "!" # Prefix uzywany do komendy
-  game: "YT TheKoteczek" # Status gry
-  award:
-    command: "say {NICK}" # Komenda ktore sie wykonuje gdy gracz odbierze nagrode
-    channel: "1028279287838683227" # ID kanalu na ktorym mozna wziasc nagrode.
-
-users: # Lista uzytkownikow

@@ -1,6 +1,0 @@
-console-name: '[EventPool] '
-ingame-name: '&0[&aEvent&bPool&0]&r '
-reload: '&aConfig files are successfully reloaded.'
-no-perm: '&cYou don''t have permission to do that.'
-empty-commands: '&cNo commands are given to the commands.yml'
-force-start: '&aSelection is started.'
